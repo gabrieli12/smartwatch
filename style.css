@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+    min-height: 100vh;
+}
+header{
+    background-color: #212134;
+    padding: 40px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    width: 9rem;
+}
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+
+/* elements */
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+.introduction h1{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.introduction p{
+    opacity: 70%;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+/* select color  */
+
+
+.select-color{
+    margin: 10px;
+    padding: 10px;
+}
+.select-color h2{
+    color: #333;
+    letter-spacing: 1px;
+}
+.select-color button{
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 25px 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* features */
+
+.features{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.features h2 {
+    color: #333;
+    letter-spacing: 1px;
+}
+.features button {
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #cac3c357;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* buy button  */
+.buy-btn{
+    margin: 10px 20px;
+    padding: 15px 30px;
+    border: none;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+/* wath time  */
+.watch{
+    position: relative;
+}
+
+.time{
+    transform: translateY(100%);
+    left: 0.1px;
+    z-index: 1;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#watch-div{
+    position: absolute;
+    top: 32%;
+    left: 35%;
+    z-index: 1;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+}
+
+#heart-img{
+    position: relative;
+    top: 1.5rem;
+    animation-name: heart;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes heart {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+
+@media screen and (max-width: 893px){
+    main{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+  
+    .introduction h1{
+        text-align: center;
+    }
+}
